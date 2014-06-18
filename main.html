@@ -10,43 +10,32 @@
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/layout.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="./js/jquery.touchSwipe.min.js"></script>
+<script src="./js/common.js"></script>
 <style>
 
 </style>
 </head>
 <body>
-
-<div id="wrap">
-	<!-- header s -->
+<div id="content-wrap">
 	<div id="header">
-		<header>
-			<div class="toplogo"><a href="#"><img src="http://spash.co.kr/shopimages/spash/mobile_web_logo.gif" alt="spash"></a></div>
-			<div class="utilmenu">
-				<a href="#">카테고리</a>
-				<a href="#">검색하기</a>
-			</div>
-			<div id="nav">
-				<nav>
-					<ul class="clearFix">
-						<li><a href="#">로그인</a></li>
-						<li><a href="#">마이페이지</a></li>
-						<li><a href="#">장바구니</a></li>
-						<li><a href="#">관심상품</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		
+		<a href="#" class="show-nav header-icon"></a>
+		<a href="#" class="hide-nav header-icon-active"></a>
+		<h1 class="toplogo"><a href="#"><img src="http://spash.co.kr/design/spash/images/common/logo.jpg" alt="spash"></a></h1>
 	</div>
-	<!-- header e -->
-
-	<hr>
-	
-	<section>section</section>
-	<hr>
-	
-	<footer>footer</footer>
+	<div class="util">
+		<ul class="util-list">
+			<li><a href="#" class="box">로그인</a></li>
+			<li class="on"><a href="#" class="box">마이페이지</a></li>
+			<li><a href="#" class="box">장바구니</a></li>
+			<li><a href="#" class="box">관심상품</a></li>
+		</ul>
+	</div>
 </div>
+<div id="sidebar">
+	<span style="color:#fff;">sidebar</span>
+</div>
+
 
 </body>
 </html>

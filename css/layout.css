@@ -1,7 +1,76 @@
 @charset "UTF-8";
 
+#content-wrap {position:absolute;width:100%;display:block;z-index:999;left:0;right:0;background:url(../images/common/body.png);}
+#header {position:relative;z-index:700;height:50px;background-color:#010101;}
+#sidebar {position:fixed;overflow:hidden;z-index:99;left:0;top:0;bottom:0;width:180px;background-color:#010101;}
+
+/*
+** header
+*/
+#header h1.toplogo {padding-top:15px;text-align:center;}
+.util {
+	-webkit-box-shadow: #999 0px 2px 4px;
+	-moz-box-shadow: #999 0px 2px 4px;
+	box-shadow: #999 0px 2px 4px;
+}
+.util-list {display:table;width:100%;background:#fff;table-layout:fixed;border-collapse:collapse;border-bottom:3px solid #c24704;}
+.util-list li {
+	display:table-cell;text-align:center;vertical-align:middle;border-right:1px solid #000;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e1e1e1), to(#fff));
+	background: -webkit-linear-gradient(#e1e1e1, #fff);
+	background: -moz-linear-gradient(#e1e1e1, #fff);
+	background: -ms-linear-gradient(#e1e1e1, #fff);
+	background: -o-linear-gradient(#e1e1e1, #fff);
+	background: linear-gradient(#e1e1e1, #fff);
+}
+.util-list li .box {display:block;position:relative;padding:12px 0;margin-left:-1px;font-weight:bold;letter-spacing:-1px;color:#333;}
+.util-list li.on .box {color:#fff;}
+.util-list li.on {background:#c24704 !important;}
+
+.header-icon{
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:solid 1px #000000;
+	width:36px;
+	height:26px;
+	display:inline-block;
+	background-color:#303030;
+}
+
+.header-icon-active{
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:solid 1px #000000;
+	width:36px;
+	height:26px;
+	display:inline-block;
+	background-color:#4e4e4e;
+}
+
+.show-nav{
+	background-image:url(../images/common/menu.png);
+	background-repeat:no-repeat;
+	background-position:9px 8px;
+	float:left;
+	margin-top:9px;
+	margin-left:10px;
+	margin-right:-45px;
+}
+
+.hide-nav {
+    display: none;
+    background-image: url(../images/common/menu.png);
+    background-repeat: no-repeat;
+    background-position: 9px 8px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 10px;
+    margin-right: -45px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 #wrap {position:relative;width:100%;}
-#header {text-align:center;}
 #nav {border:1px solid #ccc;min-width:480px;}
 #nav ul li {float:left;width:25%;background:#444;}
 #nav ul li {
@@ -15,7 +84,5 @@
 	background: -ms-linear-gradient(#666, #000);
 	background: -o-linear-gradient(#666, #000);
 	background: linear-gradient(#666, #000);
-	-pie-background: linear-gradient(#666, #000);
-	behavior: url(/pie/PIE.htc);
 }
 #nav ul li a {display:inline-block;padding:12px 0;font-size:12px;color:#fff;font-weight:bold;}
