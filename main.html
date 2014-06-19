@@ -9,8 +9,10 @@
 <title>모바일 전용 쇼핑몰</title>
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/layout.css">
+<link rel="stylesheet" href="./css/main.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="./js/jquery.touchSwipe.min.js"></script>
+<script src="./js/idangerous.swiper.js"></script>
 <script src="./js/common.js"></script>
 <style>
 
@@ -21,7 +23,7 @@
 	<div id="header">
 		<a href="#" class="show-nav header-icon"></a>
 		<a href="#" class="hide-nav header-icon-active"></a>
-		<h1 class="toplogo"><a href="#"><img src="http://spash.co.kr/design/spash/images/common/logo.jpg" alt="spash"></a></h1>
+		<h1 class="toplogo"><a href="#"><img src="./images/common/spash_logo.png" alt="spash"></a></h1>
 	</div>
 	<div class="util">
 		<ul class="util-list">
@@ -31,11 +33,71 @@
 			<li><a href="#" class="box">관심상품</a></li>
 		</ul>
 	</div>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="#"><img src="http://reskin.co.kr/shopimages/reskin/mobile/event_banner_12.jpg" alt=""></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#"><img src="http://reskin.co.kr/shopimages/reskin/mobile/event_banner_13.jpg" alt=""></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#"><img src="http://reskin.co.kr/shopimages/reskin/mobile/event_banner_14.jpg" alt=""></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#"><img src="http://reskin.co.kr/shopimages/reskin/mobile/event_banner_15.jpg" alt=""></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#"><img src="http://reskin.co.kr/shopimages/reskin/mobile/event_banner_16.jpg" alt=""></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#"><img src="http://reskin.co.kr/shopimages/reskin/mobile/event_banner_6.jpg" alt=""></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#"><img src="http://reskin.co.kr/shopimages/reskin/mobile/event_banner_5.jpg" alt=""></a>
+			</div>
+		</div>
+		<div class="pagination"></div>
+	</div>
+	<div class="m-menu">
+		<ul>
+			<li class="menu1">
+				<a href="#">
+					<span class="ico-area"></span>
+					<span class="txt">멀티비타민</span>
+				</a>
+			</li>
+			<li class="menu2">
+				<a href="#">
+					<span class="ico-area"></span>
+					<span class="txt">기능강화</span>
+				</a>
+			</li>
+			<li class="menu3">
+				<a href="#">
+					<span class="ico-area"></span>
+					<span class="txt">세트제품</span>
+				</a>
+			</li>
+		</ul>
+	</div>
 </div>
 <div id="sidebar">
 	<span style="color:#fff;">sidebar</span>
 </div>
 
-
+<script>
+(function($){
+	var mySwiper = new Swiper('.swiper-container', {
+		loop: true,
+		pagination: '.pagination',
+		paginationClickable : true,
+		calculateHeight: true,
+        resizeReInit: true,
+        autoplay: 5000,
+        speed: 300
+	});
+})(jQuery);
+</script>
 </body>
 </html>
