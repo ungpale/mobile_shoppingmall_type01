@@ -48,7 +48,7 @@
 .swiper-slide img {width:100%;}
 .swiper-wp8-horizontal {-ms-touch-action: pan-y;}
 .swiper-wp8-vertical {-ms-touch-action: pan-x;}
-.swiper-container {}
+.swiper-container {border-bottom:1px solid #b8b8b8;}
 .swiper-slide-active {}
 .swiper-slide-visible {}
 .swiper-pagination-switch {}
@@ -56,7 +56,23 @@
 .swiper-visible-switch {}
 
 .swiper-container{position:relative;width:100%;background:#fff;}
-.pagination{position:relative;z-index:20;left:0;width:100%;text-align:center;}
+.pagination{position:relative;padding:12px 0;z-index:20;left:0;width:100%;text-align:center;}
 .swiper-pagination-switch{display:inline-block;width:8px;height:8px;border-radius:8px;background:#222;margin-right:5px;opacity:0.8;border:1px solid #fff;cursor:pointer;}
 .swiper-visible-switch{background:#aaa;}
-.swiper-active-switch{background:#fff;}
+.swiper-active-switch{background:#c24704;}
+
+.items-wrap {position:relative;margin-top:15px;width:100%;}
+.items-wrap .tit-area {padding:0 0 0 10px;}
+.items-wrap .items-lst ul {padding:12px 8px 5px;}
+.items-wrap .items-lst ul li {position:relative;float:left;width:50%;}
+.items-wrap .items-lst ul li a {display:block;overflow:hidden;margin:0 4px 11px;border:1px solid #dfdfdf;border-bottom:1px solid #a1a1a1;background:#fff;-webkit-box-shadow:0 1px 0 #dfdfdf;box-shadow:0 1px 0 #dfdfdf;}
+.items-wrap .items-lst ul li .prd-thumb {position:relative;width:100%;}
+.items-wrap .items-lst ul li .prd-thumb img {display:inline;width:100%;vertical-align:middle;}
+.items-wrap .items-lst ul li .prd-cnt {position:relative;padding:5px 10px 9px;border-top:1px solid #dfdfdf;text-align:center;}
+.items-wrap .items-lst ul li .prd-cnt .name {
+	overflow:hidden; height:30px;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;-webkit-box-pack:center;-webkit-box-align:left;color:#444;font-weight:normal;font-size:0.75em;letter-spacing:-1px;text-align:center;
+}
+.items-wrap .items-lst ul li .prd-cnt .prd-price {}
+.items-wrap .items-lst ul li .prd-cnt .prd-price span {display:inline-block;}
+.items-wrap .items-lst ul li .prd-cnt .prd-price .origin {color:#999;font-size:0.81em;}
+.items-wrap .items-lst ul li .prd-cnt .prd-price .sale {font-size:1.12em;color:#333;font-weight:bold;}
